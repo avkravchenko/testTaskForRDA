@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  color: #333;
+  line-height: 22px; }
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  background-color: #CAFFA0; }
+  .content .description-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px; }
+  .content .quiz-side {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1; }
+
+.quiz-side__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .quiz-side__body .quiz-side__body__form-blocks__block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+  .quiz-side__body .quiz-side__body__form-blocks__block__answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; }
+    .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer, .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      border-radius: 15px;
+      background-color: #F5F5F5;
+      padding: 15px; }
+    .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked {
+      background-color: white;
+      border: solid 1px black; }
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #D8D8D8;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  margin-right: 10px; }
+
+input[type="radio"]:checked {
+  background-color: #fffefe;
+  border-color: #383838;
+  border-width: 6px; }
+
+.quiz-side__body__button-container {
+  display: flex;
+  justify-content: end; }
+  .quiz-side__body__button-container .quiz-side__body__button-container__button-forward, .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 107px;
+    max-width: 107px;
+    background-color: #6f6f6f;
+    color: #fff;
+    border-style: none;
+    min-height: 44px;
+    border-radius: 10px; }
+  .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active {
+    background-color: #383838; }
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=index.css.map */
