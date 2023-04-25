@@ -36,8 +36,7 @@
         <div class="quiz-side">
             <div class="quiz-side__body">
                 <form class="quiz-side__body__form-blocks">
-                <!--<form class="step__answers">-->
-                   <div class="quiz-side__body__form-blocks__block">
+                   <div id="block1" class="quiz-side__body__form-blocks__block quiz-side__body__form-blocks__block--active">
                         <p class="quiz-side__body__form-blocks__block__question">Для кого вы ищете учебное заведение?</p>
 
                         <div class="quiz-side__body__form-blocks__block__answers">
@@ -72,12 +71,61 @@
                             </div>
                         </div>
                    </div>
+                   <div id="block2" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">В каком городе планируете поступать?</p>
+                        <div class="dropdown"> 
+                            <div class="select">
+                                <p class="placeholder">Город</p>
+                                <p class="city">Санкт-Петербург</p>
+                                <div class="arrow"> </div>
+                            </div>
+                            <div class="options">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="city" id="Saint-P" value="Санкт-Петербург" checked>
+                                        <label for="Saint-P">Санкт-Петербург</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="city" id="Moscow" value="Москва">
+                                        <label for="Moscow">Москва</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="city" id="Novosib" value="Новосибирск">
+                                        <label for="Novosib">Новосибирск</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="city" id="Nijniy" value="Нижний Новогород">
+                                        <label for="Novosib">Нижний Новогород</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="city" id="Rostov-on-Don" value="Ростов-на-Дону">
+                                        <label for="Ростов-на-Дону">Ростов-на-Дону</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="city" id="Ecb" value="Екатеринбург">
+                                        <label for="Екатеринбург">Екатеринбург</label>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div id="block3" class="quiz-side__body__form-blocks__block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi obcaecati culpa doloribus modi, ducimus, qui libero reprehenderit unde ea itaque autem repellendus? Omnis, accusamus? Fugiat, officia molestiae veniam id eos quos officiis delectus optio labore, sit eveniet fugit, exercitationem nesciunt commodi omnis enim. Illum nesciunt suscipit consequuntur at blanditiis tenetur?
+                    </div>
                 </form> 
                 <div class="quiz-side__body__button-container">
-                    <button class="quiz-side__body__button-container__button-forward">Далее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="quiz-side__body__button-container__button-back">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 13.5L5.5 8.5L10.5 3.5" stroke="#383838" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> Назад
+                    </button>
+                    <button class="quiz-side__body__button-container__button-forward">Далее 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 3.5L10.5 8.5L5.5 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg></button>
+                        </svg>
+                    </button>
+                    
                 </div>
             </div>
         </div>
