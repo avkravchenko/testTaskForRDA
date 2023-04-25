@@ -1,28 +1,31 @@
-const select = document.querySelector('.select');
-const optionsBlock = document.querySelector('.options');
-const city = document.querySelector('.city');
-const cities = document.querySelectorAll('[name="city"]');
+const select = document.querySelectorAll('.select');
+const optionsBlock = document.querySelectorAll('.options');
 
 export function dropDown() {
-    select.addEventListener('click', () => {
-        optionsBlock.style.visibility = "visible";
+    select.forEach(item => {
+        item.addEventListener('click', () => {
+            optionsBlock.forEach(optionsBlock => {
+                optionsBlock.style.visibility = "visible";
+            })
+        })
     })
 }
 
-export function innerCityContent() {
-    let currentChecked = cities[0];
+export function innerCityContent(htmlCollection, output) {
+    let currentChecked = htmlCollection[0];
 
-    cities.forEach((elem) => {
-        elem.addEventListener('change', (e) => {
+    htmlCollection.forEach((elem) => {
+        
+        elem.addEventListener('change', () => {
             if (elem.checked) {
                 if (elem !== currentChecked) {
                     currentChecked.checked = false;
                     currentChecked = elem;
                 }
-                city.textContent = `${elem.value}`;
+                output.textContent = `${elem.value}`;
             } else {
-                currentChecked = cities[0];
-                city.textContent = `${cities[0].value}`;
+                currentChecked = htmlCollection[0];
+                output.textContent = `${htmlCollection[0].value}`;
             }
         });
     });

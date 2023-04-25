@@ -111,8 +111,183 @@
                         </div>
                     </div>
 
-                    <div id="block3" class="quiz-side__body__form-blocks__block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi obcaecati culpa doloribus modi, ducimus, qui libero reprehenderit unde ea itaque autem repellendus? Omnis, accusamus? Fugiat, officia molestiae veniam id eos quos officiis delectus optio labore, sit eveniet fugit, exercitationem nesciunt commodi omnis enim. Illum nesciunt suscipit consequuntur at blanditiis tenetur?
+                    <div id="block3" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">Какое образование уже есть?</p>
+
+                        <div class="quiz-side__body__form-blocks__block__answers">
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="third-step" id="nine-grade">
+                                <label for="nine-grade">9 классов</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="third-step" id="college">
+                                <label for="college">Колледж/техникум</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="third-step" id="eleven-grade">
+                                <label for="eleven-grade">11 классов</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="third-step" id="university">
+                                <label for="university">Высшее</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="third-step" id="special-college">
+                                <label for="special-college">Училище</label>
+                            </div>
+        
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="third-step" id="undone-university">
+                                <label for="undone-university">Неоконченное высшее</label>    
+                            </div>
+                        </div>
+                   </div>
+
+                   <div id="block4" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">Куда планируете поступать?</p>
+
+                        <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="fourth-step" id="nine-grade">
+                                <label for="nine-grade">Вуз</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="fourth-step" id="college">
+                                <label for="college">Колледж/техникум</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="fourth-step" id="special-college">
+                                <label for="eleven-grade">Училище</label>
+                            </div>
+                        </div> 
                     </div>
+
+                    <div id="block5" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">Какую форму обучения предпочитаете?</p>
+    
+                        <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="fifth-step" id="day">
+                                <label for="day">Очную</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="fifth-step" id="evening">
+                                <label for="evening">Заочную</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="fifth-step" id="remote">
+                                <label for="remote">Дистанционную</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="block6" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">Рассматриваете платное обучение?</p>
+    
+                        <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="sixth-step" id="budget">
+                                <label for="budget">Нет, только бюджет</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="sixth-step" id="paid">
+                                <label for="paid">Да, планирую учиться платно</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="sixth-step" id="all-options">
+                                <label for="all-options">Возможны оба варианта</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="block7" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">В каком городе планируете поступать?</p>
+                        <div class="dropdown"> 
+                            <div class="select">
+                                <p class="placeholder">Специальность</p>
+                                <p class="speciality">Любая</p>
+                                <div class="arrow"> </div>
+                            </div>
+                            <div class="options options-block7">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="speciality" id="economy" value="Экономика" checked>
+                                        <label for="economy">Экономика</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="speciality" id="philosofy" value="Философия">
+                                        <label for="philosofy">Философия</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="speciality" id="sociology" value="Социология">
+                                        <label for="sociology">Социология</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="speciality" id="law" value="Юриспруденция">
+                                        <label for="law">Юриспруденция</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="speciality" id="management" value="Менеджмент">
+                                        <label for="management">Менеджмент</label>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="block8" class="quiz-side__body__form-blocks__block">
+                        <p class="quiz-side__body__form-blocks__block__question">Как скоро планируете поступать?</p>
+
+                        <div class="quiz-side__body__form-blocks__block__answers">
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="eight-step" id="asap">
+                                <label for="asap">Как можно быстрее</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="eight-step" id="month">
+                                <label for="month">Месяц</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="eight-step" id="quarter">
+                                <label for="quarter">Квартал</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="eight-step" id="half-year">
+                                <label for="half-year">Полгода</label>
+                            </div>
+                            
+                            <div class="quiz-side__body__form-blocks__block__answers__answer">
+                                <input type="radio" name="eight-step" id="year">
+                                <label for="year">Год</label>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div id="block9" class="quiz-side__body__form-blocks__block">
+                    <p class="quiz-side__body__form-blocks__block__question">Ваша подборка готова! 🥳 Куда нам отправить её?</p>
+
+                    <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                        <input type="text" name="ninth-step" placeholder="Как вас зовут?">
+                        <input type="text" id="phone" placeholder="Номер телефона" name="ninth-step" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                        <input type="email" name="ninth-step" placeholder="E-mail" required>
+                        <button class="submit-btn" type="submit">Получить подборку</button>
+                    </div>
+                </div>
+
+                
                 </form> 
                 <div class="quiz-side__body__button-container">
                     <button class="quiz-side__body__button-container__button-back">

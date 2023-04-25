@@ -1,9 +1,13 @@
-import { dropDown, innerCityContent } from "./dropDown";
+import { dropDown, innerCityContent, innerSpecialityContent } from "./dropDown";
 import { slideBack, slideForward } from "./slider";
 
 const firstFormInputs = document.querySelectorAll('input[type="radio"]')
 const firstFormContainers = document.querySelectorAll('.quiz-side__body__form-blocks__block__answers__answer');
 const forwardBtn = document.querySelector('.quiz-side__body__button-container__button-forward');
+const city = document.querySelector('.city');
+const cities = document.querySelectorAll('[name="city"]');
+const specialities = document.querySelectorAll('[name="speciality"]');
+const speciality = document.querySelector('.speciality')
 
 firstFormInputs.forEach((elem, index) => {
    elem.addEventListener("change", function() {
@@ -20,6 +24,7 @@ firstFormInputs.forEach((elem, index) => {
    })
 
 dropDown();
-innerCityContent();
+innerCityContent(cities, city);
 slideForward();
 slideBack();
+innerCityContent(specialities, speciality);

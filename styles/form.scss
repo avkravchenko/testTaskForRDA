@@ -33,6 +33,11 @@
             border: solid 1px black;
         }
     }
+
+    .quiz-side__body__form-blocks__block__answers--three-options {
+        @extend .quiz-side__body__form-blocks__block__answers;
+        grid-template-columns: 1fr;
+    }
 }
 
 

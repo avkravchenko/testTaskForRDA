@@ -34,20 +34,22 @@
     gap: 15px; }
   .quiz-side__body .quiz-side__body__form-blocks__block--active {
     display: flex; }
-  .quiz-side__body .quiz-side__body__form-blocks__block__answers {
+  .quiz-side__body .quiz-side__body__form-blocks__block__answers, .quiz-side__body .quiz-side__body__form-blocks__block__answers--three-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px; }
-    .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer, .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked {
+    .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer, .quiz-side__body .quiz-side__body__form-blocks__block__answers--three-options .quiz-side__body__form-blocks__block__answers__answer, .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked, .quiz-side__body .quiz-side__body__form-blocks__block__answers--three-options .quiz-side__body__form-blocks__block__answers__answer--checked {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
       border-radius: 15px;
       background-color: #F5F5F5;
       padding: 15px; }
-    .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked {
+    .quiz-side__body .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked, .quiz-side__body .quiz-side__body__form-blocks__block__answers--three-options .quiz-side__body__form-blocks__block__answers__answer--checked {
       background-color: white;
       border: solid 1px black; }
+  .quiz-side__body .quiz-side__body__form-blocks__block__answers--three-options {
+    grid-template-columns: 1fr; }
 
 input[type="radio"] {
   appearance: none;
@@ -124,6 +126,16 @@ input[type="radio"]:checked {
     .dropdown .options ul li {
       list-style: none;
       padding: 5px; }
+
+input[name="ninth-step"], .submit-btn {
+  border-radius: 15px;
+  border-style: none;
+  background-color: #F5F5F5;
+  padding: 15px; }
+
+.submit-btn {
+  background-color: #383838;
+  color: #F5F5F5; }
 
 body {
   min-height: 100vh;

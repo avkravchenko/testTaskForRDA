@@ -1,0 +1,12 @@
+input[name="ninth-step"] {
+    border-radius: 15px;
+    border-style: none;
+    background-color: #F5F5F5;
+    padding: 15px;
+}
+
+.submit-btn {
+    @extend input[name="ninth-step"];
+    background-color: #383838;
+    color: #F5F5F5;
+}
