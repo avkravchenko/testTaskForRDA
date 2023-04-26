@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/dist/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
 <body>
     <main class="content">
         <div class="description-side">
-            <h2 class="description-side__title">Подберём вуз мечты</h2>
-            <p class="description-side__description">Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов</p>
+            <h2 class="description-side__title">Подберём ВУЗ мечты</h2>
+            <p class="description-side__description">Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас ВУЗов</p>
             <svg width="357" height="214" viewBox="0 0 357 214" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M237.285 56.7871H46.6291C44.6656 56.7866 42.7251 57.2105 40.9407 58.0298C39.1562 58.849 37.57 60.0443 36.2905 61.5337C35.0109 63.0231 34.0682 64.7714 33.5273 66.659C32.9863 68.5465 32.8599 70.5287 33.1563 72.4697L54.4704 211.984H272.703L250.758 68.3963C250.273 65.1693 248.646 62.2232 246.174 60.093C243.702 57.9628 240.548 56.7899 237.285 56.7871Z" fill="url(#paint0_linear_1_200)"/>
                 <path d="M53.5113 158.12C33.3198 158.12 16.9514 141.751 16.9514 121.56C16.9513 101.368 33.3198 85 53.5113 85C73.7028 85 90.0713 101.368 90.0713 121.56C90.0713 141.751 73.7028 158.12 53.5113 158.12Z" stroke="#383838" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,7 +43,7 @@
                             <span class="quiz-side__body__form-blocks__block__step">Шаг 1/9</span>
                         </div>
 
-                        <div class="quiz-side__body__form-blocks__block__answers">
+                        <div id="one" class="quiz-side__body__form-blocks__block__answers">
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
                                 <input type="radio" name="first-step" id="myself">
                                 <label for="myself">Себe</label>
@@ -83,13 +83,13 @@
                         <div class="dropdown"> 
                             <div class="select">
                                 <p class="placeholder">Город</p>
-                                <p class="city">Санкт-Петербург</p>
+                                <p class="city">Выберете город</p>
                                 <div class="arrow"> </div>
                             </div>
                             <div class="options">
                                 <ul>
                                     <li>
-                                        <input type="checkbox" name="city" id="Saint-P" value="Санкт-Петербург" checked>
+                                        <input type="checkbox" name="city" id="Saint-P" value="Санкт-Петербург">
                                         <label for="Saint-P">Санкт-Петербург</label>
                                     </li>
                                     <li>
@@ -125,7 +125,7 @@
                             <span class="quiz-side__body__form-blocks__block__step"></span>
                         </div>
 
-                        <div class="quiz-side__body__form-blocks__block__answers">
+                        <div id="two" class="quiz-side__body__form-blocks__block__answers">
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
                                 <input type="radio" name="third-step" id="nine-grade">
                                 <label for="nine-grade">9 классов</label>
@@ -164,10 +164,10 @@
                             <span class="quiz-side__body__form-blocks__block__step"></span>
                         </div>
                         
-                        <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                        <div id="three" class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
                                 <input type="radio" name="fourth-step" id="university4">
-                                <label for="university4">Вуз</label>
+                                <label for="university4">ВУЗ</label>
                             </div>
                             
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
@@ -188,7 +188,7 @@
                             <span class="quiz-side__body__form-blocks__block__step"></span>
                         </div>
     
-                        <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                        <div id="four" class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
                                 <input type="radio" name="fifth-step" id="day">
                                 <label for="day">Очную</label>
@@ -212,7 +212,7 @@
                             <span class="quiz-side__body__form-blocks__block__step"></span>
                         </div>
     
-                        <div class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
+                        <div id="five" class="quiz-side__body__form-blocks__block__answers quiz-side__body__form-blocks__block__answers--three-options">
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
                                 <input type="radio" name="sixth-step" id="budget">
                                 <label for="budget">Нет, только бюджет</label>
@@ -232,20 +232,20 @@
 
                     <div id="block7" class="quiz-side__body__form-blocks__block">
                         <div class="quiz-side__body__form-blocks__block__question-wrapper">
-                            <p class="quiz-side__body__form-blocks__block__question">В каком городе планируете поступать?</p>
+                            <p class="quiz-side__body__form-blocks__block__question">На какой специальности вы хотели бы обучаться?</p>
                             <span class="quiz-side__body__form-blocks__block__step"></span>
                         </div>
 
                         <div class="dropdown"> 
                             <div class="select">
                                 <p class="placeholder">Специальность</p>
-                                <p class="speciality">Любая</p>
+                                <p class="speciality">Выберете специальность</p>
                                 <div class="arrow"> </div>
                             </div>
                             <div class="options options-block7">
                                 <ul>
                                     <li>
-                                        <input type="checkbox" name="speciality" id="economy" value="Экономика" checked>
+                                        <input type="checkbox" name="speciality" id="economy" value="Экономика">
                                         <label for="economy">Экономика</label>
                                     </li>
                                     <li>
@@ -275,7 +275,7 @@
                             <span class="quiz-side__body__form-blocks__block__step"></span>
                         </div>
 
-                        <div class="quiz-side__body__form-blocks__block__answers">
+                        <div id="six" class="quiz-side__body__form-blocks__block__answers">
                             <div class="quiz-side__body__form-blocks__block__answers__answer">
                                 <input type="radio" name="eight-step" id="asap">
                                 <label for="asap">Как можно быстрее</label>
@@ -315,7 +315,7 @@
                         <input type="text" id="phone" placeholder="Номер телефона" name="ninth-step" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                         <input type="email" name="ninth-step" placeholder="E-mail" required>
                         <button class="submit-btn" type="submit">Получить подборку</button>
-                        <p class="agreement">Нажимая на кнопку, вы даете согласие на обработку своих <strong>Персональных данных</strong></p>
+                        <p class="agreement">Нажимая на кнопку, вы даете согласие на обработку своих <span class="personal-data">Персональных данных</span></p>
                     </div>
                 </div>
 

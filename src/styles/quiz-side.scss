@@ -1,0 +1,34 @@
+.quiz-side__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 25vh;
+    max-height: 25vh;
+    background-color: red;
+
+    .quiz-side__body__form-blocks__block {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .quiz-side__body__form-blocks__block--active {
+        @extend .quiz-side__body__form-blocks__block;
+        display: flex;
+
+        .quiz-side__body__form-blocks__block__question-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .quiz-side__body__form-blocks__block__step {
+                color: #9b9898;
+            }
+        }
+    }
+}
+
+
+
+
+
+  

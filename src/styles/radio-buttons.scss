@@ -7,12 +7,13 @@ input[type="radio"] {
     height: 20px;
     outline: none;
     margin-right: 10px;
-  }
-  
-input[type="radio"]:checked {
-    background-color: #fffefe;
-    border-color: #383838;
-    border-width: 6px;
-} 
+    cursor: pointer;
 
+      &:checked {
+        background-color: #fffefe;
+        border-color: #383838;
+        border-width: 6px;
+        cursor: pointer;
+    } 
+  }
   

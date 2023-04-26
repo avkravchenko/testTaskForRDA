@@ -1,12 +1,14 @@
-import { forwardBtn } from ".";
+import { forwardBtn } from "./index";
 import { stepsLogic } from "./steps";
-
 
 const blocks = document.querySelectorAll('.quiz-side__body__form-blocks__block');
 let currentBlock = 0;
 const blocksLength = blocks.length - 1;
 const backBtn = document.querySelector('.quiz-side__body__button-container__button-back');
 const buttonsContainer = document.querySelector('.quiz-side__body__button-container');
+const clickedItems = {};
+const blockAnswers = document.querySelectorAll('.quiz-side__body__form-blocks__block__answers__answer');
+
 
 function further() {
     if (currentBlock < blocks.length - 1) {
@@ -29,9 +31,13 @@ function further() {
     stepsLogic(currentBlock, blocksLength)
 }
 
+
+
 export function movingSlideForwardOnRadio(htmlCollection) {
+    
     htmlCollection.forEach(item => {
-        item.addEventListener('click', () => {
+        
+        item.addEventListener('click', (e) => {
 
             if (currentBlock < blocks.length - 1) {
                 blocks[currentBlock].classList.remove('quiz-side__body__form-blocks__block--active');
@@ -56,8 +62,6 @@ export function movingSlideForwardOnCheckbox(htmlCollection) {
     htmlCollection.forEach(item => {
         item.addEventListener('click', (e) => {
             const itemIsClicked = e.target;
-            console.log(itemIsClicked)
-            
 
             if (itemIsClicked) {
                 forwardBtn.classList.add('quiz-side__body__button-container__button-forward--active');
@@ -80,6 +84,7 @@ export function movingSlideBack() {
             backBtn.classList.remove('quiz-side__body__button-container__button-back--active');
         }
 
+        
         stepsLogic(currentBlock, blocksLength)
     })
 }
