@@ -1,7 +1,7 @@
 import { dropDown, innerCityContent } from "./dropDown";
-import { movingSlideForwardOnCheckbox } from "./movingSlideForwardOnInput";
+import { movingSlideBack, movingSlideForwardOnCheckbox } from "./movingSlideForwardOnInput";
 import { movingSlideForwardOnRadio } from "./movingSlideForwardOnInput";
-import { slideBack } from "./slider";
+
 
 
 
@@ -20,6 +20,6 @@ dropDown();
 innerCityContent(cities, city);
 movingSlideForwardOnRadio(radioInputs);
 movingSlideForwardOnCheckbox(checkboxInputs);
-slideBack();
+movingSlideBack();
 innerCityContent(specialities, speciality);
 
