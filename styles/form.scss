@@ -12,6 +12,15 @@
     .quiz-side__body__form-blocks__block--active {
         @extend .quiz-side__body__form-blocks__block;
         display: flex;
+
+        .quiz-side__body__form-blocks__block__question-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .quiz-side__body__form-blocks__block__step {
+                color: #9b9898;
+            }
+        }
     }
 
     .quiz-side__body__form-blocks__block__answers {

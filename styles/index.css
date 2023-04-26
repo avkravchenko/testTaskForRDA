@@ -34,6 +34,11 @@
     gap: 15px; }
   .quiz-side__body .quiz-side__body__form-blocks__block--active {
     display: flex; }
+    .quiz-side__body .quiz-side__body__form-blocks__block--active .quiz-side__body__form-blocks__block__question-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      .quiz-side__body .quiz-side__body__form-blocks__block--active .quiz-side__body__form-blocks__block__question-wrapper .quiz-side__body__form-blocks__block__step {
+        color: #9b9898; }
   .quiz-side__body .quiz-side__body__form-blocks__block__answers, .quiz-side__body .quiz-side__body__form-blocks__block__answers--three-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,7 +74,7 @@ input[type="radio"]:checked {
 .quiz-side__body__button-container {
   display: flex;
   justify-content: space-between; }
-  .quiz-side__body__button-container .quiz-side__body__button-container__button-forward, .quiz-side__body__button-container .quiz-side__body__button-container__button-back, .quiz-side__body__button-container .quiz-side__body__button-container__button-back--active, .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active {
+  .quiz-side__body__button-container .quiz-side__body__button-container__button-forward, .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active, .quiz-side__body__button-container .quiz-side__body__button-container__button-back, .quiz-side__body__button-container .quiz-side__body__button-container__button-back--active {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,6 +85,8 @@ input[type="radio"]:checked {
     border-style: none;
     min-height: 44px;
     border-radius: 10px; }
+  .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active {
+    background-color: #383838; }
   .quiz-side__body__button-container .quiz-side__body__button-container__button-back, .quiz-side__body__button-container .quiz-side__body__button-container__button-back--active {
     visibility: hidden;
     background-color: #ffffff;
@@ -88,8 +95,6 @@ input[type="radio"]:checked {
     border-radius: 10px; }
   .quiz-side__body__button-container .quiz-side__body__button-container__button-back--active {
     visibility: visible; }
-  .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active {
-    background-color: #383838; }
 
 .dropdown {
   min-height: 200px;
@@ -136,6 +141,11 @@ input[name="ninth-step"], .submit-btn {
 .submit-btn {
   background-color: #383838;
   color: #F5F5F5; }
+
+.agreement {
+  font-size: .8rem;
+  color: #9b9898;
+  text-align: center; }
 
 body {
   min-height: 100vh;

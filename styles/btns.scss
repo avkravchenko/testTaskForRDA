@@ -16,6 +16,11 @@
         border-radius: 10px;
     }
 
+    .quiz-side__body__button-container__button-forward--active {
+        @extend .quiz-side__body__button-container__button-forward;
+        background-color: #383838;
+    }
+
     .quiz-side__body__button-container__button-back {
         @extend .quiz-side__body__button-container__button-forward;
         visibility: hidden;
@@ -30,9 +35,6 @@
         visibility: visible;
     }
 
-    .quiz-side__body__button-container__button-forward--active {
-        @extend .quiz-side__body__button-container__button-forward;
-        background-color: #383838;
-    }
+    
 }
 
