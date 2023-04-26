@@ -1,5 +1,5 @@
 .quiz-side {
-
+    overflow: hidden;
     background-color: #fff;
     padding: 35px;
     border-radius: 15px;
@@ -17,14 +17,22 @@
 
     
         .quiz-side__body__form-blocks__block {
-            display: none;
+            display: flex;
+            height: 0px;
+            opacity: 0;
             flex-direction: column;
+            transform: translateX(700px);
+            transition: transform .5s ease-out;
             gap: 15px;
         }
     
         .quiz-side__body__form-blocks__block--active {
-            @extend .quiz-side__body__form-blocks__block;
             display: flex;
+            opacity: 1;
+            flex-direction: column;
+            transform: translateX(0px);
+            gap: 15px;
+
     
             .quiz-side__body__form-blocks__block__question-wrapper {
                 display: flex;

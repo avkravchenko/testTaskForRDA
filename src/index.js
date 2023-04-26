@@ -1,4 +1,5 @@
 import { dropDown, innerCityContent } from "./dropDown";
+import { formSubmit } from "./formSubmit";
 import { movingSlideBack, movingSlideForwardOnCheckbox, movingSlideForwardOnRadio } from "./movingSlide";
 import { radioButtonsStyling } from "./radioButtonsStyling";
 
@@ -18,4 +19,5 @@ movingSlideForwardOnRadio(radioInputs);
 movingSlideForwardOnCheckbox(checkboxInputs);
 movingSlideBack();
 innerCityContent(specialities, speciality);
+formSubmit();
 

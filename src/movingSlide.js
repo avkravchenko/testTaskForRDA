@@ -6,9 +6,6 @@ let currentBlock = 0;
 const blocksLength = blocks.length - 1;
 const backBtn = document.querySelector('.quiz-side__body__button-container__button-back');
 const buttonsContainer = document.querySelector('.quiz-side__body__button-container');
-const clickedItems = {};
-const blockAnswers = document.querySelectorAll('.quiz-side__body__form-blocks__block__answers__answer');
-
 
 function further() {
     if (currentBlock < blocks.length - 1) {
@@ -30,8 +27,6 @@ function further() {
 
     stepsLogic(currentBlock, blocksLength)
 }
-
-
 
 export function movingSlideForwardOnRadio(htmlCollection) {
     
