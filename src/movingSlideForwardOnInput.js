@@ -7,9 +7,7 @@ const blocks = document.querySelectorAll('.quiz-side__body__form-blocks__block')
 let currentBlock = 0;
 const blocksLength = blocks.length - 1;
 
-function kek() {
-    console.log('kek')
-
+function further() {
     if (currentBlock < blocks.length - 1) {
         blocks[currentBlock].classList.remove('quiz-side__body__form-blocks__block--active');
         currentBlock += 1;
@@ -24,7 +22,8 @@ function kek() {
         buttonsContainer.style.display = 'none';
     }
 
-    forwardBtn.removeEventListener('click', kek)
+    forwardBtn.removeEventListener('click', further)
+    forwardBtn.classList.remove('quiz-side__body__button-container__button-forward--active');
 
     stepsLogic(currentBlock, blocksLength)
 }
@@ -32,10 +31,6 @@ function kek() {
 export function movingSlideForwardOnRadio(htmlCollection) {
     htmlCollection.forEach(item => {
         item.addEventListener('click', () => {
-
-
-            
-
 
             if (currentBlock < blocks.length - 1) {
                 blocks[currentBlock].classList.remove('quiz-side__body__form-blocks__block--active');
@@ -65,7 +60,7 @@ export function movingSlideForwardOnCheckbox(htmlCollection) {
 
             if (itemIsClicked) {
                 forwardBtn.classList.add('quiz-side__body__button-container__button-forward--active');
-                forwardBtn.addEventListener('click', kek)
+                forwardBtn.addEventListener('click', further)
             }
         }) 
     })
