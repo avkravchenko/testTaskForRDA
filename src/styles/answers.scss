@@ -1,7 +1,7 @@
 .quiz-side__body__form-blocks__block__answers {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
     
     .quiz-side__body__form-blocks__block__answers__answer {
         display: flex;
@@ -25,4 +25,5 @@
 .quiz-side__body__form-blocks__block__answers--three-options {
     @extend .quiz-side__body__form-blocks__block__answers;
     grid-template-columns: 1fr;
+    gap: 10px;
 }

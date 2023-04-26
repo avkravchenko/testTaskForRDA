@@ -18,30 +18,32 @@
     flex-direction: column;
     flex: 1;
     gap: 15px; }
-  .content .quiz-side {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 15px;
-    flex: 1; }
 
-.quiz-side__body {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  min-height: 25vh;
-  max-height: 25vh;
-  background-color: red; }
-  .quiz-side__body .quiz-side__body__form-blocks__block, .quiz-side__body .quiz-side__body__form-blocks__block--active {
-    display: none;
+.quiz-side {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  flex: 1;
+  width: 576px;
+  height: 392px; }
+  .quiz-side .quiz-side__body {
+    height: 349px;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
     flex-direction: column;
-    gap: 15px; }
-  .quiz-side__body .quiz-side__body__form-blocks__block--active {
-    display: flex; }
-    .quiz-side__body .quiz-side__body__form-blocks__block--active .quiz-side__body__form-blocks__block__question-wrapper {
-      display: flex;
-      justify-content: space-between; }
-      .quiz-side__body .quiz-side__body__form-blocks__block--active .quiz-side__body__form-blocks__block__question-wrapper .quiz-side__body__form-blocks__block__step {
-        color: #9b9898; }
+    gap: 20px; }
+    .quiz-side .quiz-side__body .quiz-side__body__form-blocks__block, .quiz-side .quiz-side__body .quiz-side__body__form-blocks__block--active {
+      display: none;
+      flex-direction: column;
+      gap: 15px; }
+    .quiz-side .quiz-side__body .quiz-side__body__form-blocks__block--active {
+      display: flex; }
+      .quiz-side .quiz-side__body .quiz-side__body__form-blocks__block--active .quiz-side__body__form-blocks__block__question-wrapper {
+        display: flex;
+        justify-content: space-between; }
+        .quiz-side .quiz-side__body .quiz-side__body__form-blocks__block--active .quiz-side__body__form-blocks__block__question-wrapper .quiz-side__body__form-blocks__block__step {
+          color: #9b9898; }
 
 input[type="radio"] {
   appearance: none;
@@ -60,6 +62,7 @@ input[type="radio"] {
     cursor: pointer; }
 
 .quiz-side__body__button-container {
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between; }
   .quiz-side__body__button-container .quiz-side__body__button-container__button-forward, .quiz-side__body__button-container .quiz-side__body__button-container__button-forward--active, .quiz-side__body__button-container .quiz-side__body__button-container__button-back, .quiz-side__body__button-container .quiz-side__body__button-container__button-back--active {
@@ -86,8 +89,7 @@ input[type="radio"] {
     visibility: visible; }
 
 .dropdown {
-  min-height: 200px;
-  max-width: 500px; }
+  min-height: 200px; }
   .dropdown .select {
     position: relative;
     background-color: white;
@@ -113,7 +115,7 @@ input[type="radio"] {
     visibility: hidden;
     background-color: white;
     border-radius: 15px;
-    max-height: 120px;
+    max-height: 154px;
     padding: 5px 15px;
     margin-top: 10px;
     overflow: scroll;
@@ -142,7 +144,7 @@ input[name="ninth-step"], .submit-btn {
 .quiz-side__body__form-blocks__block__answers, .quiz-side__body__form-blocks__block__answers--three-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px; }
+  gap: 10px; }
   .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer, .quiz-side__body__form-blocks__block__answers--three-options .quiz-side__body__form-blocks__block__answers__answer, .quiz-side__body__form-blocks__block__answers .quiz-side__body__form-blocks__block__answers__answer--checked, .quiz-side__body__form-blocks__block__answers--three-options .quiz-side__body__form-blocks__block__answers__answer--checked {
     display: flex;
     flex-direction: row-reverse;
@@ -157,7 +159,8 @@ input[name="ninth-step"], .submit-btn {
     border: solid 1px black; }
 
 .quiz-side__body__form-blocks__block__answers--three-options {
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  gap: 10px; }
 
 body {
   min-height: 100vh;
